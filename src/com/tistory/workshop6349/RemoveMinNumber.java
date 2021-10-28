@@ -10,8 +10,10 @@ public class RemoveMinNumber {
         if (arr.length == 1) return new int[]{-1};
         Integer[] copy = Arrays.stream(arr).boxed().toArray(Integer[]::new);
 
-        int min = Arrays.stream(arr).min().getAsInt();
-
+        int min = 0;
+        if (Arrays.stream(arr).min().isPresent()) {
+            min = Arrays.stream(arr).min().getAsInt();
+        }
         List<Integer> list = new ArrayList<>(Arrays.asList(copy));
 
         list.remove((Integer) min);
