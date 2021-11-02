@@ -5,9 +5,11 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        RemoveMinNumber minNumber = new RemoveMinNumber();
-        int[] arr = {4,3,2,1};
-        System.out.println(Arrays.toString(minNumber.solution(arr)));
+//        ReverseInteger integer = new ReverseInteger();
+//        System.out.println(integer.solution(118372));
+        FindKim kim = new FindKim();
+        String[] seoul = {"Jane", "Kim"};
+        System.out.println(kim.solution(seoul));
     }
 
 }
