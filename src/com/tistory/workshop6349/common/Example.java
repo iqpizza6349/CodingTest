@@ -1,4 +1,4 @@
-package com.tistory.workshop6349;
+package com.tistory.workshop6349.common;
 
 import java.io.BufferedReader;
 import java.io.IOException;
