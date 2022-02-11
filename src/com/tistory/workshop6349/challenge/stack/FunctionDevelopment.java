@@ -60,11 +60,13 @@ public class FunctionDevelopment {
     }
 
     public static void main(String[] args) {
+        long before = System.nanoTime();
         System.out.println(
                 Arrays.toString(
                         solution(new int[]{93, 30, 55}, new int[]{1, 30, 5})
                 )
         );
+        System.out.println(System.nanoTime() - before);
     }
 
 }
