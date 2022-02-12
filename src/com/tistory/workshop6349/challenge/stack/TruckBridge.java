@@ -55,9 +55,6 @@ public class TruckBridge {
                 if (weights + trucks.peek().getWeight() <= weight) {
                     bridge.add(trucks.poll());
                 }
-                if (bridge.isEmpty()) {
-                    bridge.add(trucks.poll()); // 다리에 아무런 트럭이 없으면 맨처음 트럭을 넣어줌
-                }
             }
             i++;
         }
