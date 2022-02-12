@@ -24,10 +24,9 @@ public class Printer {
 
 //            System.out.println("papers: " + papers + ", 위치: " + tempLocation);
             int current = papers.peek(); // 제일 처음 값
+            papers.remove();
             if (isHighest(current, papers)) {
                 // 현재 값이 제일 크다면
-                papers.remove();
-
                 if (tempLocation < 0) {
                     continue;
                 }
@@ -40,7 +39,6 @@ public class Printer {
             }
             else {
                 // 현재 값이 제일 크지 않다면
-                papers.remove();
                 papers.add(current);
                 if (tempLocation == 0) {
                     tempLocation = papers.size() - 1;
@@ -65,7 +63,7 @@ public class Printer {
 
     public static void main(String[] args) {
         System.out.println(
-                solution(new int[]{1, 9, 3, 8, 2, 1, 7}, 6)
+                solution(new int[]{0, 9, 3, 8, 2, 0, 7}, 0)
         );
     }
 
