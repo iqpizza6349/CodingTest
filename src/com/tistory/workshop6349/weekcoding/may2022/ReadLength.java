@@ -1,4 +1,4 @@
-package com.tistory.workshop6349.weekcoding.twomaysecond;
+package com.tistory.workshop6349.weekcoding.may2022;
 
 import java.io.BufferedReader;
 import java.io.IOException;
